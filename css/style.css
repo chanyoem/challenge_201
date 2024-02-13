@@ -41,13 +41,13 @@ img {
 
 @keyframes imgSize {
     0%{
-        width: 100px;
+        width: 75%;
     }
     50%{
         width: 200px;
     }
     100%{
-        width: 100px;
+        width: 75%;
     }
 }
 
