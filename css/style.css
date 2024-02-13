@@ -3,8 +3,26 @@
     padding: 0;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 img_box {
-    
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border-width: 3px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 75%;
 }
 
 @keyframes backgroundBG {
