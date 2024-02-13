@@ -5,26 +5,84 @@
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-img_box {
+.img_box {
     margin: 10px;
     padding: 10px;
     width: 200px;
     height: 200px;
-    background-color: aqua;
+    border-color: gray;
+    border-style: solid;
     border-width: 3px;
     border-radius: 5px;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 img {
     width: 75%;
 }
 
-@keyframes backgroundBG {
-    
+.img1 {
+    border: 3px red solid;
+    animation: borderColor 5s infinite;
+}
+
+.img2 {
+    animation: imgSize 5s infinite;
+}
+
+.img3 {
+    animation: textColor 5s infinite;
+}
+
+@keyframes imgSize {
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+@keyframes borderColor {
+    0%{
+        border-color: red;
+    }
+    25%{
+        border-color: green;
+    }
+    50%{
+        border-color: purple;
+    }
+    75%{
+        border-color: blue;
+    }
+    100%{
+        border-color: red;
+    }
+}
+
+@keyframes textColor {
+    0%{
+        color: red;
+    }
+    25%{
+        color: green;
+    }
+    50%{
+        color: purple;
+    }
+    75%{
+        color: blue;
+    }
+    100%{
+        color: red;
+    }
 }
